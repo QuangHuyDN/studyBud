@@ -1,6 +1,5 @@
 # How to run this repo locally
 
-*Note
 
 ## Prequisites
 * Install and run virtualenv to create a virtual environment
