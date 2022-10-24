@@ -1,2 +1,4 @@
 *.sqlite3
-/env
+env/
+migrations/
+__pycache__/
