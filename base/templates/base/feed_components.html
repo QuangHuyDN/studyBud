@@ -3,7 +3,7 @@
   <div class="roomListRoom__header">
     <a href="{% url 'profile' room.host.id %}" class="roomListRoom__author">
       <div class="avatar avatar--small active">
-        <img src="https://t3.ftcdn.net/jpg/02/09/37/00/360_F_209370065_JLXhrc5inEmGl52SyvSPeVB23hB6IjrR.jpg" />
+        <img src="{{room.host.avatar.url}}" />
       </div>
       <span>@{{room.host.username}}</span>
     </a>

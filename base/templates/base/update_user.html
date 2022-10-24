@@ -22,8 +22,15 @@
         </div>
       </div>
       <div class="layout__body">
-        <form class="form" action="" method="POST">
-          {% csrf_token %} {% for field in form %}
+        <form
+          class="form"
+          action=""
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <!-- indicate that we also submit file with this form  -->
+          {% csrf_token %}
+          {% for field in form %}
 
           <div class="form__group">
             <label for="">{{field.label}}</label>

@@ -12,12 +12,12 @@
         <div class="profile__avatar">
           <div class="avatar avatar--large active">
             <img
-              src="https://t3.ftcdn.net/jpg/02/09/37/00/360_F_209370065_JLXhrc5inEmGl52SyvSPeVB23hB6IjrR.jpg"
+              src="{{user.avatar.url}}"
             />
           </div>
         </div>
         <div class="profile__info">
-          <h3>{{user.username}}</h3>
+          <h3>{{user.name}}</h3>
           <p>@{{user.username}}</p>
 
           {% if request.user == user %}

@@ -96,7 +96,7 @@
             <p>Hosted By</p>
             <a href="{% url 'profile' room.host.id%}" class="room__author">
               <div class="avatar avatar--small">
-                <img src="https://t3.ftcdn.net/jpg/02/09/37/00/360_F_209370065_JLXhrc5inEmGl52SyvSPeVB23hB6IjrR.jpg" />
+                <img src="{{room.host.avatar.url}}" />
               </div>
               <span>@{{room.host.username}}</span>
             </a>
@@ -121,7 +121,7 @@
                   >
                     <div class="avatar avatar--small">
                       <img
-                        src="https://t3.ftcdn.net/jpg/02/09/37/00/360_F_209370065_JLXhrc5inEmGl52SyvSPeVB23hB6IjrR.jpg"
+                        src="{{message.user.avatar.url}}"
                       />
                     </div>
                     <span>@{{message.user.username}}</span>
@@ -180,7 +180,7 @@
         {% for participant in participants %}
         <a href="{% url 'profile' participant.id %}" class="participant">
           <div class="avatar avatar--medium">
-            <img src="https://t3.ftcdn.net/jpg/02/09/37/00/360_F_209370065_JLXhrc5inEmGl52SyvSPeVB23hB6IjrR.jpg" />
+            <img src="{{participant.avatar.url}}" />
           </div>
           <p>
             {{participant.username}}
